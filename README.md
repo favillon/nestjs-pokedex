@@ -13,7 +13,23 @@ cd name_proyect
 ```sh
 yarn install
 ```
-4. Ejecutar
+4. Tener instalador Nest CLI
+```sh
+yarn global add @nestjs/cli
+```
+
+5. Levantar BD mong
+```sh
+docker-compose u
+```
+
+6. Ejecutar
 ```sh 
 yarn start:dev
 ```
+
+7. Recontruir Data con el seed O Ejecutar la coleccion carpeta seed
+```sh
+curl --location --request POST 'localhost:3000/api/v1/seed'
+```
+
