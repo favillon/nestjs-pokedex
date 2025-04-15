@@ -20,10 +20,12 @@ yarn global add @nestjs/cli
 
 5. Levantar BD mong
 ```sh
-docker-compose u
+docker-compose up -d
 ```
 
-6. Ejecutar
+6. Clona el archivo `.env-template` en `.env` y reemplazar los valores de las variables
+
+7. Ejecutar
 ```sh 
 yarn start:dev
 ```
@@ -33,3 +35,9 @@ yarn start:dev
 curl --location --request POST 'localhost:3000/api/v1/seed'
 ```
 
+## Stack
+
+- nestjs
+- typescript
+- mongodb
+- docker
