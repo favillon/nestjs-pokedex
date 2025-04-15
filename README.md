@@ -35,6 +35,33 @@ yarn start:dev
 curl --location --request POST 'localhost:3000/api/v1/seed'
 ```
 
+
+## Crear contenedores  para `PROD`
+
+Comando para creacion de contenedores
+```sh
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+Levantar correr
+```sh
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+```
+
+
+## Aceder  a los contenedores
+
+app
+```sh
+docker exec -it pokedexapp-prod /bin/sh
+node --version
+```
+mongo
+```sh
+docker exec -it mongo-poke-prod /bin/sh
+mongod --version
+```
+
 ## Stack
 
 - nestjs
